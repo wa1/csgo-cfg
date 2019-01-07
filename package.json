@@ -1,0 +1,15 @@
+{
+  "name": "csgo-config",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "concat": "concat-glob-cli -f _*.cfg -o autoexec.cfg"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concat-glob-cli": "^0.1.0"
+  }
+}
