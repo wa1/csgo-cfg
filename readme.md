@@ -1,14 +1,29 @@
 # CSGO Config
 
-Packages an autoexec.cfg based on several config files.
+Generates an autoexec.cfg based on modular config files.
 
-# Instructions
+## Instructions
 
-Setup: Download node.js (which includes npm), then run `npm install` in the project directory. That will install all dependencies.\
-To generate a new autoexec.cfg: `npm run concat`\
-Recommended editor: Visual Studio Code
+Either simply run the PowerShell script to generate an autoexec.cfg in /dist or follow the node.js/npm or gulp examples below.
+
+### Powershell method (easiest)
+
+* Run `concat.ps1` in Windows PowerShell, from project directory, autoexec.cfg will be generated in /dist directory.
+
+### Node/NPM
+
+* Download node.js (which includes npm)
+* Run `npm install` in the project directory. That will install all dependencies.\
+* Run `npm run concat` to generate autoexec.cfg in /dist directory.
+
+### Gulp 
+
+* Open a cmd/terminal and go to the project directory
+* Run `gulp` to generate autoexec.cfg in /dist directory
 
 ## Tips
+
+Recommended editor: Visual Studio Code
 
 Get clearer map overviews at http://simpleradar.com\
 Add the files to `\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\resource\overviews`
