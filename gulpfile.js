@@ -1,21 +1,3 @@
-// // gulpfile.js
-// var gulp = require('gulp');
-// var concat = require('gulp-concat');
-
-// // gulp.task('concat', function(){
-// //   console.log("Concatenating all the cfg files");
-// //   gulp.src("_*.cfg")
-// //       .pipe(concat('autoexec.cfg'))
-// //       .pipe(gulp.dest('build/styles'));
-// // });
-
-// gulp.task('default', [], function() {
-//   console.log("Concatenating all the cfg files");
-//   gulp.src("_*.cfg")
-//       .pipe(concat('autoexec.cfg'))
-//       .pipe(gulp.dest('build/styles'));
-// });
-
 const { src, dest } = require('gulp');
 const concat = require('gulp-concat');
 const header = require('gulp-header');
