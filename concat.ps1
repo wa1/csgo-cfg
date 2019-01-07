@@ -1,0 +1,1 @@
+Get-Content src/header.cfg, src/_*.cfg, src/footer.cfg | Set-Content dist/autoexec.cfg
