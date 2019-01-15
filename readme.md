@@ -8,7 +8,9 @@ Either simply run the PowerShell script to generate an autoexec.cfg in /dist or 
 
 ### Powershell method (easiest)
 
-* Run `concat.ps1` in Windows PowerShell, from project directory, autoexec.cfg will be generated in /dist directory.
+* Run **concat.ps1** in Windows PowerShell, from project directory, autoexec.cfg will be generated in /dist directory. Manually replace autoexec in CSGO cfg directory or follow the next steps.
+* Optional: edit csgo cfg folder path in **deploy.ps1** if the default isn't correct: `$path_csgo = "C:/Program Files (x86)/Steam/steamapps/common/Counter-Strike Global Offensive/csgo/cfg"`
+* Optional: Run **deploy.ps1** to replace current autoexec (A backup will be saved in the cfg directory)
 
 ### Node/NPM
 
