@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "concat": "concat-glob-cli -f _*.cfg -o autoexec.cfg"
+    "concat": "concat-glob-cli -f src/_*.cfg -o dist/autoexec.cfg"
   },
   "author": "",
   "license": "MIT",
