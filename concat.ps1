@@ -1,3 +1,5 @@
+# Run this first: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
 Write-Output "Generating new autoexec.cfg"
 
 $info = @"
@@ -15,3 +17,5 @@ echo ""
 (Get-Content src/header.cfg, src/_*.cfg) + $info + (Get-Content src/footer.cfg) | Set-Content dist/autoexec.cfg
 
 Write-Output "New autoexec.cfg generated at ./dist/autoexec.cfg"
+
+(Get-Content src/prac.cfg) | Set-Content dist/prac.cfg

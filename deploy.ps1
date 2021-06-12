@@ -1,3 +1,5 @@
+# Run this first: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
 Write-Output "Deploying autoexec to csgo folder (a backup of the current autoexec will be saved)."
 
 # Edit to your csgo path.
@@ -19,6 +21,17 @@ If (Test-Path $path_csgo/autoexec.cfg) {
 Write-Output "Overwriting current autoexec with new version"
 Copy-Item dist/autoexec.cfg -Destination $path_csgo/autoexec.cfg
 
+Write-Output "autoexec done."
 
-Write-Output "Done."
+#prac
 
+If (Test-Path $path_csgo/prac.cfg) {
+    $backup_filename_prac = "_prac_$(get-date -f yyyyMMdd_HHmmssffff).cfg"
+    Write-Output "Making backup of current prac.cfg: $backup_filename_prac"
+    Copy-Item $path_csgo/prac.cfg -Destination $path_csgo/$backup_filename_prac
+}
+
+Write-Output "Overwriting current prac with new version"
+Copy-Item dist/prac.cfg -Destination $path_csgo/prac.cfg
+
+Write-Output "prac done."
