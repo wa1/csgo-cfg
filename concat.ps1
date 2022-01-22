@@ -4,12 +4,8 @@ Write-Output "Generating new autoexec.cfg"
 
 $info = @"
 
-echo ""
 echo "Config generated using https://github.com/wa1/csgo-cfg"
-echo ""
-echo "Build timestamp: $(
-    Get-date -f yyyy-MM-ddTHH:mm:ss:ffff
-)"
+echo "Build timestamp: $(Get-date -f yyyy-MM-ddTHH:mm:ss:ffff)"
 echo ""
 "@
 
