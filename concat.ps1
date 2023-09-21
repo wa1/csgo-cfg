@@ -1,5 +1,8 @@
 # Run this first: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
+Write-Output "Run this if the script crashes next (to allow running scripts)"
+Write-Output "Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass"
+
 Write-Output "Generating new autoexec.cfg"
 
 $info = @"
