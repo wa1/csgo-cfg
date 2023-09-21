@@ -7,9 +7,9 @@ Write-Output "Generating new autoexec.cfg"
 
 $info = @"
 
-echo "Config generated using https://github.com/wa1/csgo-cfg"
-echo "Build timestamp: $(Get-date -f yyyy-MM-ddTHH:mm:ss:ffff)"
-echo ""
+echo "Config generated using https://github.com/wa1/csgo-cfg";
+echo "Build timestamp: $(Get-date -f yyyy-MM-ddTHH:mm:ss:ffff)";
+echo "...";
 "@
 
 # Glue all the config files together
